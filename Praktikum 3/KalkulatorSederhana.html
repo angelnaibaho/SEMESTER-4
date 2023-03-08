@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>Kalkulator Sederhana</title>
+    </head>
+    <!-- Script tag digunakan untuk mendefinisikan script sisi user, seperti JavaScript -->
+    <script language="Javascript">
+        function hitung() {
+			// Ambil nilai dari input dengan id "bil1" dan "bil2"
+			var bil1 = Number(document.getElementById("bil1").value);
+			var bil2 = Number(document.getElementById("bil2").value);
+
+			// Ambil nilai dari tombol operator yang dipilih
+			var operator = document.getElementById("operator").value;
+
+			// Hitung hasilnya berdasarkan operator yang dipilih
+			if (operator == "+") {
+				document.getElementById("hasil").value = bil1 + bil2;
+			} else if (operator == "-") {
+				document.getElementById("hasil").value = bil1 - bil2;
+			} else if (operator == "x") {
+				document.getElementById("hasil").value = bil1 * bil2;
+			} else if (operator == "/") {
+				document.getElementById("hasil").value = bil1 / bil2;
+			}
+		}
+	</script>
+    <!-- tag Body digunakan untuk memberikan isi dari suatu dokumen yang akan ditampilkan oleh web browsernya -->
+    <body>
+        <h1>!!! Kalkulator Sederhana !!!</h1>
+        <p>Masukkan dua bilangan yang ingin dihitung!</p>
+        <!-- User menginput angka -->
+        <input type="text" id="bil1"> 
+        <select id="operator">
+            <!-- Pemilihan untuk simbol perhitungan yang diinginkan-->
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="x">x</option>
+            <option value="/">/</option>
+        </select> 
+        <input type="text" id="bil2"> <br><br>
+        <!-- Button berfungsi sebagai tombol untuk menghitung kedua bilangan yang telah diinputkan -->
+        <button onclick="hitung()">Hitung</button>
+        <p>Hasil:</p>
+        <input type="text" id="hasil">
+    </body>
+</html>

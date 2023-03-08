@@ -1,0 +1,291 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Times New Roman';
+}
+
+
+/*nav */
+
+nav {
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    background-color: rgb(3, 101, 159);
+    color: white;
+}
+
+ul {
+    float: right;
+    margin-right: 40px;
+    list-style: none;
+}
+
+ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 10px;
+}
+
+ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+
+/* header */
+
+header {
+    padding-top: 80px;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(50, 121, 184);
+    color: #070000;
+}
+
+.herotxt {
+    width: 500px;
+    margin-right: 40px;
+}
+
+.heroimg img {
+    padding: 20px;
+    width: 200px;
+    height: 200px;
+}
+
+#icons {
+    color: #fafafa;
+    width: 42px;
+    height: 42px;
+    padding-right: 10px;
+}
+
+
+/* Pendidikan*/
+
+.pendidikan {
+    text-align: center;
+    background-color: #fafafa;
+    height: 600px;
+    padding-top: 50px;
+}
+
+.tableSekolah {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#pendidikan h2 {
+    margin-top: 80px;
+}
+
+.table {
+    color: black;
+    background-color: white;
+    margin-left: 40px;
+    min-height: 400px;
+    min-width: 300px;
+    max-width: 230px;
+    border-radius: 10px;
+    box-shadow: 3px 5px 10px rgb(3, 101, 159);
+    padding-top: 20px;
+    font-size: medium;
+    margin: 5px;
+}
+
+.table h3 {
+    font-size: 32px;
+    line-height: 40px;
+    padding-top: 50px;
+}
+
+.table h4 {
+    font-size: 24px;
+    padding: 20px;
+}
+
+.table img {
+    width: 200px;
+    height: 200px;
+}
+
+
+/* Jadwal Kuliah */
+
+.kuliah {
+    background-color: rgb(3, 101, 159);
+    color: #fafafa;
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.kuliah table {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #666;
+    background: chocolate;
+    border: 1px solid;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table tr {
+    text-align: center;
+    padding-left: 15px;
+}
+
+table td {
+    font-size: 20px;
+    padding: 15px 24px;
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid coral;
+    border-left: 1px solid coral;
+    background: rgb(254, 237, 193);
+}
+
+table th {
+    font-size: 32px;
+    padding: 15px 35px;
+    border-top: 1px solid coral;
+    border-bottom: 1px solid coral;
+    border-left: 1px solid coral;
+    background: rgb(156, 0, 0);
+    color: #fafafa;
+}
+
+
+/*Aktivitas */
+
+.aktivitas {
+    background-color: white;
+    text-align: center;
+    color: black;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.tableaktiv {
+    display: flex;
+    box-shadow: 5px 10px 18px #000000;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    margin-top: 80px;
+    box-shadow: 5px 10px 18px #ffffff;
+    min-height: 200px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 90px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+.caktiv1 img {
+    padding-top: 20px;
+    max-width: 200px;
+    max-height: 200px;
+    padding-right: 30px;
+    justify-content: left;
+}
+
+.aktivitas a {
+    text-decoration: none;
+}
+
+.caktiv2 {
+    padding: 20px;
+    margin: 30px;
+}
+
+.caktiv2 h2 {
+    font-size: 32px;
+    padding-bottom: 20px;
+}
+
+.caktiv2 p {
+    font-size: 24px;
+    padding-bottom: 20px;
+}
+
+.caktiv a {
+    background-color: coral;
+    color: #fafafa;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 3px;
+}
+
+/* More Information */
+.moreinfo {
+    background-color: rgb(3, 101, 159);
+    color: #fafafa;
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+footer {
+    text-align: center;
+    color: #fafafa;
+    background-color: grey;
+}
+
+@media (max-width:992px) {
+    .herotxt p {
+        font-size: 18px;
+        margin-right: 0;
+        padding: 40px;
+    }
+    label #btn {
+        display: block;
+    }
+
+    #check:checked~ul {
+        right: 0;
+    }
+    #check :checked~label #btn {
+        display: none;
+    }
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+        height: 800px;
+    }
+    .tableSekolah {
+        flex-direction: column;
+    }
+    .pendidikan {
+        height: 1700px;
+    }
+    table {
+        width: 100%;
+    }
+    table th {
+        font-size: 10px;
+        padding: 2px 2px;
+    }
+    table td {
+        font-size: 10px;
+        padding: 2px 2px;
+    }
+}

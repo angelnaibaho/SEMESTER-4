@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>Konversi Angka ke Huruf</title>
+    </head>
+    <!-- Script tag digunakan untuk mendefinisikan script sisi user, seperti JavaScript -->
+    <script language="Javascript">
+        function test () {
+            // Digunakan untuk mengambil input angka dari user
+            var nilai=document.kirim. T1. value
+            //Mengkonversi Angka menjadi Huruf
+            if (nilai >= 0 && nilai <=40){
+                document.kirim.T2. value="E"
+            } else if (nilai >= 41 && nilai <=55){
+                document.kirim.T2. value="D"
+            } else if (nilai >= 56 && nilai <=60){
+                document.kirim.T2. value="BC"
+            } else if (nilai >= 66 && nilai <=70){
+                document.kirim.T2. value="B"
+            } else if (nilai >= 71 && nilai <=80){
+                document.kirim.T2. value="AB"
+            } else if (nilai >= 81 && nilai <=100){
+                document.kirim.T2. value="A"
+            } else if (nilai > 100){
+                document.kirim.T2. value="Tidak dapat dideteksi"
+            }
+        }
+    </script>
+    <!-- tag Body digunakan untuk memberikan isi dari suatu dokumen yang akan ditampilkan oleh web browsernya -->
+    <body>
+        <h1>!!! Konversi Angka ke Huruf !!!</h1>
+        <!-- form Digunakan untuk membuat elemen form pada halaman web -->
+        <form method="POST" name="kirim">
+            <!-- User menginput angka -->
+            <p>Masukkan Angka: <input type="text" name="T1" size="20"> Nilai: <input type="text" name="T2" size=""20> </p>
+            <!-- Sebagai tombol untuk mengkonversikan angka menjadi nilai -->
+            <p><input type="button" value="Konversi" name="B1" onclick=test()> </p>
+        </form>
+    </body>
+</html>
