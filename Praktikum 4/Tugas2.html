@@ -1,0 +1,37 @@
+<html>
+
+<head>
+    <title>Double Klik</title>
+    <script src="jquery-3.6.3.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            var klik = 0; // inisialisasi jumlah klik
+
+            $(".kotak").click(function () {
+                klik++; // menambah jumlah klik setiap kali kotak diklik
+
+                if (klik == 2) { // jika jumlah klik sudah 2
+                    var randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16); // menghasilkan nilai acak untuk warna latar belakang
+                    $(this).css("background-color", randomColor); // mengubah warna latar belakang kotak menjadi warna acak
+                    klik = 0; // reset jumlah klik
+                }
+            });
+        });
+    </script>
+    <link rel="stylesheet" type="text/css" href="Tugas2.css">
+</head>
+
+<body>
+    <!-- Untuk menampilkan teks: -->
+    <h1>Silahkan klik 2× pada kotak berikut!!!</h1>
+    <br>
+    <div class="container">
+        <!-- Untuk menampilkan 4 kotak  -->
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+        <div class="kotak"></div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+button {
+    color: whitesmoke;
+    background: rgb(164, 122, 129);
+    margin-right: 20px;
+    font-weight: bold;
+    width: 100px;
+    height: 30px;
+}
+
+body {
+    background-image: linear-gradient(to right, #cfd8db, #cc8eb1, #c95ca8, #cc8ec4, #cfd8db);
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 3cm;
+    margin-left: 3cm;
+}
+
+.foto3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.rowbutton {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}

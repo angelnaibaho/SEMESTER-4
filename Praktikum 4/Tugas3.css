@@ -1,0 +1,48 @@
+button {
+    /* mengubah warna font pada button */
+    color: whitesmoke;
+    /* mengubah warna background pada button */
+    background: rgb(164, 122, 129);
+    /* memberikan jarak antar tombol satu dengan yang lainnya */
+    margin-right: 20px;
+    /* mengubah font menjadi bold (tebal) */
+    font-weight: bold;
+    /* mengatur lebar dari elemen button yang dibuat agar terlihat lebih rapih */
+    width: 100px;
+    /* mengatur tinggi dari elemen button yang dibuat agar terlihat lebih rapih */
+    height: 30px;
+}
+
+body {
+    /* mengatur background dari page web yang dibuat */
+    background-image: linear-gradient(to right, #cfd8db, rgb(181, 146, 105), rgb(181, 105, 129), rgb(131, 55, 186), rgb(105, 106, 181), #cfd8db);
+}
+
+
+.countainer {
+    /* mengatur tata letak agar fleksibel */
+    display: flex;
+    /* mengatur posisi elemen agar ditengah */
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    /* mengatur tata letak agar fleksibel */
+    display: flex;
+    /* mengatur posisi elemen agar ditengah */
+    justify-content: center;
+    align-items: center;
+}
+
+/* membuat kotak secara manual */
+#kotak {
+    /* mengatur lebar dari elemen kotak yang dibuat agar terlihat lebih rapih */
+    width: 200px;
+    /* mengatur tinggi dari elemen kotak yang dibuat agar terlihat lebih rapih */
+    height: 200px;
+    /* mengatur warna background dari kotak */
+    background: lightyellow;
+    /* mengatur warna bagian pinggir dari kotak */
+    border: 1px solid black;
+}

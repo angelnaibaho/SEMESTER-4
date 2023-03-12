@@ -1,0 +1,44 @@
+<html>
+
+<head>
+    <title>Efek Fade</title>
+    <script src="jquery-3.6.3.min.js"></script>
+    <script type="text/javascript">
+        //baris kode jQuery akan dijalankan
+        //apabila semua elemen sudah ditampilkan semua
+        $(document).ready(function () {
+            // menambahkan event listener untuk tombol "fade in"
+            $(".fade_in").click(function () {
+                // mengubah opacity dari elemen dengan ID "kotak" menjadi transparan 100%
+                $('#kotak').animate({ opacity: '1' }, 'slow');
+            });
+            // menambahkan event listener untuk tombol "fade out"
+            $(".fade_out").click(function () {
+                // mengubah opacity dari elemen dengan ID "kotak" menjadi transparan 0% atau hilang
+                $('#kotak').animate({ opacity: '0' }, 'slow');
+            });
+            // menambahkan event listener untuk tombol "fade to 0,3"
+            $(".fade_to").on('click', function () {
+                // mengubah opacity dari elemen dengan ID "kotak" menjadi transparan 0,3%
+                $('#kotak').animate({ opacity: '0.3' }, 'slow');
+            });
+        });
+    </script>
+    <!-- memanggil css untuk menghias page serta elemen  -->
+    <link rel="stylesheet" type="text/css" href="Tugas3.css">
+</head>
+
+<body>
+    <div class="countainer">
+        <!-- memunculkan kotak yang telah dibuat -->
+        <h1 id="kotak"></h1>
+    </div>
+    <div class="text">
+        <!-- memunculkan semua tombol efek fade -->
+        <button class="fade_in">Fade In</button>
+        <button class="fade_out">Fade Out</button>
+        <button class="fade_to">Fade To 0,3</button>
+    </div>
+</body>
+
+</html>

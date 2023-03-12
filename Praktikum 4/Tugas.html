@@ -1,0 +1,61 @@
+<html>
+
+<head>
+    <title>Tombol Tampilkan dan Sembunyikan</title>
+    <script src="jquery-3.6.3.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".sembunyi").click(function () { $("#foto").hide("slow") });
+            $(".tampil").click(function () { $("#foto").show("slow") });
+
+            //mengatur untuk menyembunyikan serta menampilkan foto kedua 
+            $(".sembunyi2").click(function () { $("#foto2").hide("slow") });
+            $(".tampil2").click(function () { $("#foto2").show("slow") });
+
+            //mengatur untuk menyembuyikan serta menampilkan foto ketiga
+            $(".sembunyi3").click(function () { $("#foto3").hide("slow") });
+            $(".tampil3").click(function () { $("#foto3").show("slow") });
+        });
+    </script>
+    <!-- memanggil css untuk menghias page serta elemen  -->
+    <link rel="stylesheet" type="text/css" href="Tugas.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="foto">
+            <!-- Untuk membuat tombol Tampilkan.
+                Ketika tombol "Tampilkan" diklik, gambar pertama akan ditampilkan kembali menggunakan method .show(). -->
+            <button class="tampil">Tampilkan</button>
+            <!-- Untuk membuat tombol Sembunyikan.
+                Ketika tombol "Tampilkan" diklik, gambar pertama akan ditampilkan kembali menggunakan method .hide() -->
+            <button class="sembunyi">Sembuyikan</button>
+            <!-- Menampilkan gambar pertama -->
+            <p><img id="foto" src="https://picsum.photos/225"></p>
+        </div>
+        <div class="foto2">
+            <!-- Untuk membuat tombol Tampilkan.
+                Ketika tombol "Tampilkan" diklik, gambar kedua akan ditampilkan kembali menggunakan method .show(). -->
+            <button class="tampil2">Tampilkan</button>
+            <!-- Untuk membuat tombol Sembunyikan.
+                Ketika tombol "Tampilkan" diklik, gambar kedua akan ditampilkan kembali menggunakan method .hide() -->
+            <button class="sembunyi2">Sembunyikan</button>
+            <!-- Menampilkan gambar kedua -->
+            <p><img id="foto2" src="https://picsum.photos/225"></p>
+        </div>
+    </div>
+    <div class="foto3">
+        <div class="rowbutton">
+            <!-- Untuk membuat tombol Tampilkan.
+                Ketika tombol "Tampilkan" diklik, gambar ketiga akan ditampilkan kembali menggunakan method .show(). -->
+            <button class="tampil3">Tampilkan</button>
+            <!-- Untuk membuat tombol Sembunyikan.
+                Ketika tombol "Tampilkan" diklik, gambar ketiga akan ditampilkan kembali menggunakan method .hide() -->
+            <button class="sembunyi3">Sembunyikan</button>
+        </div>
+        <!-- Menampilkan gambar ketiga -->
+        <p><img id="foto3" src="https://picsum.photos/225"></p>
+    </div>
+</body>
+
+</html>
